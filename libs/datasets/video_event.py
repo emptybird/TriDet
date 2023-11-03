@@ -158,7 +158,6 @@ class VideoEventDataset(Dataset):
             print('ERROR: feature file %s not found!' % filename)
         # with np.load(filename) as data:
         feats = np.load(filename, allow_pickle=True).astype(np.float32)
-        print('feat name and feats.shape', filename, feats.shape)
         # deal with downsampling (= increased feat stride)
         feats = feats[::self.downsample_rate, :]
         feat_stride = self.feat_stride * self.downsample_rate
