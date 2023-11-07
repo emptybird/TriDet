@@ -6,7 +6,7 @@ dataset: {
   feat_folder: '/data2/video_feat_extract/slowfast_features_30fps',
   file_prefix: ,
   file_ext: .npy,
-  num_classes: 5,
+  num_classes: 1,
   input_dim: 2304,
   feat_stride: 16,
   num_frames: 32,
